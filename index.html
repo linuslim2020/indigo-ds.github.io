@@ -1,0 +1,1570 @@
+
+<!doctype html>
+<html lang="en">
+    <head><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+
+
+<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/sgds.css" />
+
+<link rel="stylesheet" href="assets/custom-css/main.css" />
+
+
+
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KV9NNPT");
+</script>
+<!-- End Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144934503-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-144934503-1");
+</script>
+<script src="https://assets.wogaa.sg/scripts/wogaa.js"></script>
+<!-- Hotjar Tracking Code for https://www.designsystem.gov.sg -->
+<script>
+    (function(h, o, t, j, a, r) {
+        h.hj =
+            h.hj ||
+            function() {
+                (h.hj.q = h.hj.q || []).push(arguments);
+            };
+        h._hjSettings = { hjid: 1425909, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+</script>
+
+
+<!-- This is to track what people are copying from documentation-->
+<script>
+    // Declare function to get selected text from document
+    function getSelectionText() {
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        return text;
+    }
+
+    // Declare function on copy event
+    document.addEventListener("copy", function(e) {
+        dataLayer.push({
+            event: "textCopied",
+            clipboardText: getSelectionText(),
+            clipboardLength: getSelectionText().length
+        });
+    });
+</script>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Getting Started | Singapore Government Design System</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Getting Started" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Design System unites Singapore Government digital services around a common visual language and user experience" />
+<meta property="og:description" content="Design System unites Singapore Government digital services around a common visual language and user experience" />
+<meta property="og:site_name" content="Singapore Government Design System" />
+<script type="application/ld+json">
+{"description":"Design System unites Singapore Government digital services around a common visual language and user experience","@type":"WebPage","url":"/docs/getting-started/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/logo_sgds.png"}},"headline":"Getting Started","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+    
+    
+
+    <body class="has-navbar-fixed-top has-component-dropdown">
+        
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV9NNPT"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
+        <main><div class="masthead-container is-fixed has-background-white" id="navbar" style="z-index:50;">
+    <div class="sgds-masthead" aria-label="Official SG Government Agency Website">
+    <div class="sgds-container ">
+        <div class="row is-mobile">
+            <div class="col">
+                <a href="https://www.gov.sg" target="_blank">
+                    <span class="sgds-icon sgds-icon-sg-crest"></span>
+                    <span class="is-text">A Singapore Government Agency Website</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="sgds-container ">
+        <nav class="sgds-navbar" role="navigation">
+            <div class="sgds-navbar-brand">
+                <a class="sgds-navbar-item" href="/">
+                    <img src="assets/img/logo-sgds.svg" alt="Design System Logo" />
+                </a>
+                <div class="sgds-navbar-burger" data-target="navbarMain">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarMain" class="sgds-navbar-menu">
+                <div class="sgds-navbar-start">
+                    <form action="/search/" method="get" class="is-hidden-desktop">
+                        <div class="field has-addons padding--sm">
+    <div class="control has-icons-left is-expanded padding--bottom--sm">
+        <input
+            class="input is-fullwidth is-borderless is-shadowless"
+            id="search"
+            type="text"
+            placeholder="What are you looking for?"
+            name="search"
+            autocomplete="off"
+            aria-label="main-search"
+        />
+        <span class="icon is-left">
+            <i class="search-bar-icon sgds-icon sgds-icon-search is-size-7"></i>
+        </span>
+    </div>
+    <div class="control">
+        <button
+            type="submit"
+            class="sgds-button is-primary has-text-white padding--left padding--right is-hidden-touch"
+        >
+            SEARCH
+        </button>
+    </div>
+</div>
+
+                    </form><a
+                        class="sgds-navbar-item is-uppercase  has-text-weight-semibold is-tab"
+                        href="/about/ " target=""
+                    >
+                        
+                    </a><a
+                        class="sgds-navbar-item is-uppercase  has-text-weight-semibold is-tab"
+                        href="/guides/ " target=""
+                    >
+                        
+                    </a><a
+                        class="sgds-navbar-item is-uppercase is-active has-text-weight-semibold is-tab"
+                        href="/docs/ " target=""
+                    >
+                        Docs
+                    </a><a
+                        class="sgds-navbar-item is-uppercase  has-text-weight-semibold is-tab"
+                        href="/patterns/ " target=""
+                    >
+                        
+                    </a></div>
+
+                <div class="sgds-navbar-end">
+
+
+                </div>
+            </div>
+        </nav>
+        <div class="row is-hidden-touch hide" id="searchbar-main">
+            <div class="col">
+                <hr class="margin--bottom--sm" />
+                <form action="/search/" method="get">
+                    <div class="field has-addons padding--sm">
+    <div class="control has-icons-left is-expanded padding--bottom--sm">
+        <input
+            class="input is-fullwidth is-borderless is-shadowless"
+            id="search"
+            type="text"
+            placeholder="What are you looking for?"
+            name="search"
+            autocomplete="off"
+            aria-label="main-search"
+        />
+        <span class="icon is-left">
+            <i class="search-bar-icon sgds-icon sgds-icon-search is-size-7"></i>
+        </span>
+    </div>
+    <div class="control">
+        <button
+            type="submit"
+            class="sgds-button is-primary has-text-white padding--left padding--right is-hidden-touch"
+        >
+            SEARCH
+        </button>
+    </div>
+</div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+        <section class="sgds-section is-paddingless is-hidden-desktop mobile-side-nav">
+
+    <div class="sgds-dropdown is-fullwidth">
+        <div class="sgds-dropdown-trigger">
+            <button class="sgds-button is-outlined is-large" aria-haspopup="true" aria-controls="sgds-dropdown-menu">
+                <span>Docs</span>
+                <span class="icon">
+                    <span class="sgds-icon sgds-icon-chevron-down"></span>
+                </span>
+            </button>
+        </div>
+        <div class="sgds-dropdown-menu docs-nav-dropdown" id="sgds-dropdown-menu" role="menuitem">
+            <div class="sgds-dropdown-content padding has-background-light">
+                <div class="row is-multiline is-mobile">
+                    <div class="col is-12">
+                            <a class="is-block is-size-7" href="/docs/getting-started/">Getting Started</a>
+                    </div>
+                    <div class="col is-12">
+                            <a class="is-block is-size-7" href="/docs/installation/">Installation</a>
+                    </div>
+
+                </div>
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <hr class="margin--bottom--sm margin--top--sm">
+                        
+                        <p>Standard</p>
+                        <div class="row is-multiline is-mobile">
+                            
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/masthead/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Masthead</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/main-nav/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Main Nav<span class="sgds-tag is-rounded margin--left--sm">JS</span></small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/side-nav/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Side Nav<span class="sgds-tag is-rounded margin--left--sm">JS</span></small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/footer/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Footer</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <hr class="margin--bottom--sm margin--top--sm">
+                        
+                        <p>Layout</p>
+                        <div class="row is-multiline is-mobile">
+                            
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/container/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Container</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/grid/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Grid</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/responsiveness/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Responsiveness</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/section/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Section</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <hr class="margin--bottom--sm margin--top--sm">
+                        
+                        <p>General</p>
+                        <div class="row is-multiline is-mobile">
+                            
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/accordion/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Accordion<span class="sgds-tag is-rounded margin--left--sm">JS</span></small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/breadcrumb/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Breadcrumb</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/button/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Button</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/callout/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Callout</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/card/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Card</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/dropdown/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Dropdown<span class="sgds-tag is-rounded margin--left--sm">JS</span></small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/hero/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Hero</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/iconography/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Iconography</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/modal/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Modal</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/notification/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Notification</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/pagination/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Pagination</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/tab/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Tab<span class="sgds-tag is-rounded margin--left--sm">JS</span></small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/table/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Table</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/tag/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Tag</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/tooltip/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Tooltip</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/typography/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Typography</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <hr class="margin--bottom--sm margin--top--sm">
+                        
+                        <p>Form</p>
+                        <div class="row is-multiline is-mobile">
+                            
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/general-guidelines/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                General Guidelines</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/checkbox/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Checkbox</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/radio-buttons/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Radio Buttons</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/text-area/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Text Area</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/text-input/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Text Input</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
+                
+                    
+                        <hr class="margin--bottom--sm margin--top--sm">
+                        
+                        <p>Helpers</p>
+                        <div class="row is-multiline is-mobile">
+                            
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/colours/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Colours</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col is-3-desktop is-4-tablet is-6-mobile">
+                                <a href="/docs/display/" class="is-flex component-card">
+                                    <div class="sgds-card sgds-card-button">
+                                        <div class="sgds-card-content has-text-centered">
+                                            <small
+                                                class="has-text-weight-semibold is-block"
+                                            >
+                                                Display</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+    
+    <!-- https://github.com/comsysto/jekyll-breadcrumb-for-github-pages -->
+<section class="sgds-section is-small has-background-gradient">
+    <div class="sgds-container ">
+        <nav class="sgds-breadcrumb has-background padding--top--sm" aria-label="breadcrumbs">
+            <ul>
+                
+                
+                <li><a class="has-text-white" href="/">HOME</a></li>
+                
+
+                
+
+                
+                
+                
+
+                <li>
+                    <a class="has-text-white" href="/docs/footer/docs/main-nav/docs/masthead/docs/side-nav/docs/container/docs/grid/docs/responsiveness/docs/section/docs/accordion/docs/breadcrumb/docs/button/docs/callout/docs/card/docs/dropdown/docs/hero/docs/iconography/docs/modal/docs/notification/docs/pagination/docs/tab/docs/table/docs/tag/docs/tooltip/docs/typography/docs/checkbox/docs/general-guidelines/docs/radio-buttons/docs/text-area/docs/text-input/docs/colours/docs/display/guides/designers-accessibility/guides/designers-ui-kit/guides/developers-accessibility/guides/developers-color-contrast/guides/developers-image-optimisation/guides/writers-accessibility/patterns/address/patterns/date/patterns/email-address/patterns/names/patterns/overview/docs/customise-sgds/docs/">
+                        DOCS
+                    </a>
+                </li>
+
+                
+
+                
+                
+                
+
+                <li>
+                    <a class="has-text-white" href="/docs/footer/docs/main-nav/docs/masthead/docs/side-nav/docs/container/docs/grid/docs/responsiveness/docs/section/docs/accordion/docs/breadcrumb/docs/button/docs/callout/docs/card/docs/dropdown/docs/hero/docs/iconography/docs/modal/docs/notification/docs/pagination/docs/tab/docs/table/docs/tag/docs/tooltip/docs/typography/docs/checkbox/docs/general-guidelines/docs/radio-buttons/docs/text-area/docs/text-input/docs/colours/docs/display/guides/designers-accessibility/guides/designers-ui-kit/guides/developers-accessibility/guides/developers-color-contrast/guides/developers-image-optimisation/guides/writers-accessibility/patterns/address/patterns/date/patterns/email-address/patterns/names/patterns/overview/docs/customise-sgds/docs/getting-started/">
+                        GETTING STARTED
+                    </a>
+                </li>
+
+                
+            </ul>
+        </nav>
+        <h1 class="has-text-white has-text-weight-semibold">Getting Started</h1>
+    </div>
+</section>
+
+<div class="content-page">
+                <section class="sgds-section is-small">
+    <div class="sgds-container">
+        <div class="row sidenav-container">
+            <div class="col is-2 is-hidden-touch">
+                <div class="sidenav" data-topspacing="140" data-bottomspacing="40">
+                    <div class="sidebar__inner sgds-menu">
+                        
+                            <ul class="sgds-menu-list">
+    
+    
+    <li><a href="/docs/getting-started" class="is-active">Getting started</a></li>
+
+    
+    
+    <li><a href="installation.html" class="">Installation</a></li>
+
+    
+    
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+        
+        <li class="second-level-nav">
+            <a class="second-level-nav-header">
+                Standard
+                
+                <i class="sgds-icon sgds-icon-chevron-down has-text-weight" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+            <li class="second-level-nav-div is-hidden" id="standard-component">
+        
+                <ul>
+                    
+                    
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/masthead/">
+                                Masthead</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/main-nav/">
+                                Main Nav<span class="sgds-tag is-rounded margin--left--sm">JS</span></a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/side-nav/">
+                                Side Nav<span class="sgds-tag is-rounded margin--left--sm">JS</span></a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/footer/">
+                                Footer</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+    
+        
+        <li class="second-level-nav">
+            <a class="second-level-nav-header">
+                Layout
+                
+                <i class="sgds-icon sgds-icon-chevron-down has-text-weight" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+            <li class="second-level-nav-div is-hidden" id="layout-component">
+        
+                <ul>
+                    
+                    
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/container/">
+                                Container</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/grid/">
+                                Grid</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/responsiveness/">
+                                Responsiveness</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/section/">
+                                Section</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+    
+        
+        <li class="second-level-nav">
+            <a class="second-level-nav-header">
+                General
+                
+                <i class="sgds-icon sgds-icon-chevron-down has-text-weight" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+            <li class="second-level-nav-div is-hidden" id="general-component">
+        
+                <ul>
+                    
+                    
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/accordion/">
+                                Accordion<span class="sgds-tag is-rounded margin--left--sm">JS</span></a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/breadcrumb/">
+                                Breadcrumb</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/button/">
+                                Button</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/callout/">
+                                Callout</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/card/">
+                                Card</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/dropdown/">
+                                Dropdown<span class="sgds-tag is-rounded margin--left--sm">JS</span></a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/hero/">
+                                Hero</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/iconography/">
+                                Iconography</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/modal/">
+                                Modal</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/notification/">
+                                Notification</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/pagination/">
+                                Pagination</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/tab/">
+                                Tab<span class="sgds-tag is-rounded margin--left--sm">JS</span></a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/table/">
+                                Table</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/tag/">
+                                Tag</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/tooltip/">
+                                Tooltip</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/typography/">
+                                Typography</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+    
+        
+        <li class="second-level-nav">
+            <a class="second-level-nav-header">
+                Form
+                
+                <i class="sgds-icon sgds-icon-chevron-down has-text-weight" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+            <li class="second-level-nav-div is-hidden" id="form-component">
+        
+                <ul>
+                    
+                    
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/general-guidelines/">
+                                General Guidelines</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/checkbox/">
+                                Checkbox</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/radio-buttons/">
+                                Radio Buttons</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/text-area/">
+                                Text Area</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/text-input/">
+                                Text Input</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+    
+        
+        <li class="second-level-nav">
+            <a class="second-level-nav-header">
+                Helpers
+                
+                <i class="sgds-icon sgds-icon-chevron-down has-text-weight" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+            <li class="second-level-nav-div is-hidden" id="helpers-component">
+        
+                <ul>
+                    
+                    
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/colours/">
+                                Colours</a>
+                        </li>
+                                                            
+                        
+                        
+                        <li>
+                            <a class="component-name second-level-nav-item " href="/docs/display/">
+                                Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+</ul> 
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col is-8 is-12-touch is-offset-1-desktop">
+                <div class="content custom-content">
+                    <h2>Overview</h2>
+<p><a href="/docs/installation">Installation</a></p>
+<p>
+    <a href="/docs/customise-sgds">Advanced customisation with Sass</a>
+</p>
+<p>
+    We highly recommend that you customise your site, by extending base SGDS
+    classes using separate CSS or <a href="/docs/customise-sgds">Sass</a> files.
+</p>
+<p>
+    This way, your site will automatically inherit non-conflicting fixes and
+    improvements made to SGDS without breaking existing styles.
+</p>
+<p>
+  Here are the items you’ll need:
+  <ul>
+    <li><a href="/docs/installation">Installation of SGDS</a>.</li>
+    <li><a href="/docs/customise-sgds">Use advanced customisation with Sass</a>.</li>
+  </ul>
+</p>
+<p>
+  <b>Note:</b> Links that contain the
+  <span class="sgds-tag is-rounded has-text-weight-semibold">JS</span>
+  tags contain interactive elements that require
+  <a href="/docs/installation">JavaScript</a>.
+</p>
+<p>
+  If you are using a JavaScript framework, check out the framework-specific helper libraries:
+</p>
+<ul>
+    <li>
+        <a href="https://github.com/govtechsg/sgds-govtech-react">
+        <i class="fab fa-react"></i>React</a>
+    </li>
+    <li>
+        <a href="https://github.com/govtechsg/sgds-govtech-vue">
+          <i class="fab fa-vuejs"></i>Vue</a>
+    </li>
+</ul>
+
+<hr />
+
+<h3>Component reference</h3>
+<p>
+  Component reference is helpful for you to implement layouts, elements and
+  components, using our CSS class and modifiers.
+</p>
+<p>
+  Each page provides you with comprehensive usage instructions, examples and guidelines.
+</p>
+
+<hr />
+
+<h3>Standard Components</h3>
+<p>
+  Standard components aid users in basic site identification and navigation.
+  They should be present in all <b>.gov.sg</b> websites as stated in the
+  <a href="https://www.tech.gov.sg/digital-service-standards/" target="_blank">
+    Digital Service Standards</a>.
+</p>
+
+<div class="row is-multiline is-mobile">
+    
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/masthead/">Masthead</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/main-nav/">Main Nav</a>
+  
+  <span
+      class="sgds-tag is-rounded margin--left--sm has-text-weight-semibold"
+      >JS</span
+  >
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/side-nav/">Side Nav</a>
+  
+  <span
+      class="sgds-tag is-rounded margin--left--sm has-text-weight-semibold"
+      >JS</span
+  >
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/footer/">Footer</a>
+  
+
+</div>
+
+
+</div>
+
+<hr />
+
+<h3>Layout</h3>
+<p>
+  CSS classes are used for composing your site layout. Over here, you can also
+  find the breakpoints that we use for desktop and mobile devices.
+</p>
+
+<div class="row is-multiline is-mobile">
+    
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/container/">Container</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/grid/">Grid</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/responsiveness/">Responsiveness</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/section/">Section</a>
+  
+
+</div>
+
+
+</div>
+
+<hr />
+
+<h3>General</h3>
+<p>
+  Common components that can be used individually or grouped to form patterns
+  and templates. For example, you can group the hero with cards to build a landing page.
+</p>
+
+<div class="row is-multiline is-mobile">
+    
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/accordion/">Accordion</a>
+  
+  <span
+      class="sgds-tag is-rounded margin--left--sm has-text-weight-semibold"
+      >JS</span
+  >
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/breadcrumb/">Breadcrumb</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/button/">Button</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/callout/">Callout</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/card/">Card</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/dropdown/">Dropdown</a>
+  
+  <span
+      class="sgds-tag is-rounded margin--left--sm has-text-weight-semibold"
+      >JS</span
+  >
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/hero/">Hero</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/iconography/">Iconography</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/modal/">Modal</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/notification/">Notification</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/pagination/">Pagination</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/tab/">Tab</a>
+  
+  <span
+      class="sgds-tag is-rounded margin--left--sm has-text-weight-semibold"
+      >JS</span
+  >
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/table/">Table</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/tag/">Tag</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/tooltip/">Tooltip</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/typography/">Typography</a>
+  
+
+</div>
+
+
+</div>
+
+<hr class="margin--bottom--lg margin--top--lg" />
+
+<h3>Form</h3>
+<p>
+  Form components and guidelines for the collection of user input.
+</p>
+
+<div class="row is-multiline is-mobile">
+        
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/general-guidelines/">General Guidelines</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/checkbox/">Checkbox</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/radio-buttons/">Radio Buttons</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/text-area/">Text Area</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/text-input/">Text Input</a>
+  
+
+</div>
+
+
+</div>
+
+<hr class="margin--bottom--lg margin--top--lg" />
+
+<h3>Helpers</h3>
+<p>
+  Helper classes to help you alter the style of almost any component.
+</p>
+
+<div class="row is-multiline is-mobile margin--bottom--lg">
+    
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/colours/">Colours</a>
+  
+
+</div>
+
+
+<div class="col is-4">
+  <a class="is-size-7" href="/docs/display/">Display</a>
+  
+
+</div>
+
+
+</div>
+          
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </main><footer class="sgds-footer">
+  <div class="top-section">
+    <div class="sgds-container ">
+      <div class="row">
+        <div class="col header">
+          <h5 class="has-text-white">
+            <b>Singapore Government Design System</b>
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col is-3">
+          <p class="has-text-white"><b>User Guides</b></p>
+          <p>
+            <a href="/docs/getting-started/">Get started with Design System</a>
+          </p>
+          <p>
+            <a href="https://github.com/GovTechSG/sgds/issues"
+              >Suggest a Component</a
+            >
+          </p>
+          <p><a href="/coming-soon/">Submit a Theme</a></p>
+        </div>
+        <div class="col is-3">
+          <p class="has-text-white"><b>Other Sites</b></p>
+          <p><a href="https://www.developer.gov.sg">Developer Portal</a></p>
+          <p><a href="https://www.isomer.gov.sg/">Isomer</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col is-right-desktop-only">
+          <ul>
+            <li class="is-inline-block-desktop-only">
+              <!--Tools questionaire-->
+              <p><a href="https://form.gov.sg/forms/govtech/5bc440ac507956000fdbae91" target="_blank">Contact</a></p>
+            </li>
+            <li class="is-inline-block-desktop-only">
+              <!--Feedback form-->
+              <p>
+                <a href="https://form.gov.sg/#!/forms/govtech/5bd12c6668dbe7000fff9ace" target="_blank">Feedback</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-section">
+    <div class="sgds-container ">
+      <div class="row is-multiline">
+        <div class="col is-12">
+          <ul>
+            <li>
+              <a href="https://tech.gov.sg/report_vulnerability" target="_blank"
+                >Report Vulnerability</a
+              >
+            </li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div
+          class="col is-12 has-text-right-desktop has-text-right-tablet has-text-left-mobile"
+        >
+          <p class="is-hidden-touch">
+            © 2021 Government of Singapore. Last Updated
+            07 Jan 2021</p>
+          <p class="is-hidden-desktop">
+            © 2021 Government of Singapore
+          </p>
+          <p class="is-hidden-desktop last-updated">
+            Last Updated 07 Jan 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/css-element-queries@1.2.0/src/ResizeSensor.js"></script>
+<script src="js/sgds.js"></script>
+
+</body>
+</html>
